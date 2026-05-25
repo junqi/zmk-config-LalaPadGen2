@@ -159,6 +159,7 @@
         status = "disabled";
         device = <&trackpad_split_R>;
         input-processors = <&trackpad_key_behaviors_R>,
+                           <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
                            <&zip_xy_scaler 1 5>,
                            <&zip_scroll_scaler 1 12>,
                            <&zip_dynamic_xy_scaler>,
@@ -166,6 +167,7 @@
         lowspeedmode {
             layers = <1>,<2>;
             input-processors =  <&trackpad_key_behaviors_R>,
+                                <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
                                 <&zip_xy_scaler 1 15>,
                                 <&zip_scroll_scaler 1 40>,
                                 <&zip_dynamic_xy_scaler>,
@@ -177,6 +179,7 @@
         status = "disabled";
         device = <&trackpad_split_L>;
         input-processors = <&trackpad_key_behaviors_L>,
+                           <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
                            <&zip_xy_scaler 1 5>,
                            <&zip_scroll_scaler 1 12>,
                            <&zip_dynamic_xy_scaler>,
@@ -184,6 +187,7 @@
         lowspeedmode {
             layers = <1>,<2>;
             input-processors =  <&trackpad_key_behaviors_L>,
+                                <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
                                 <&zip_xy_scaler 1 15>,
                                 <&zip_scroll_scaler 1 40>,
                                 <&zip_dynamic_xy_scaler>,
