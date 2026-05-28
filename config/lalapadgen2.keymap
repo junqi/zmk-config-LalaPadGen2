@@ -118,7 +118,7 @@
             display-name = "secondary_layer";
             bindings = <
 &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp LEFT_PARENTHESIS   &kp LEFT_BRACE                              &kp N7            &kp NUMBER_8       &kp NUMBER_9  &kp NUMBER_0  &kp EQUAL
-&kp AT            &kp HASH           &kp DOLLAR       &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE                             &kt NUMBER_4      &kp NUMBER_5       &kp NUMBER_6  &kp PLUS      &kp MINUS
+&kp AT            &kp HASH           &kp DOLLAR       &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE                             &kp NUMBER_4      &kp NUMBER_5       &kp NUMBER_6  &kp PLUS      &kp MINUS
 &kp PERCENT       &kp TILDE          &kp CARET        &kp PIPE               &kp BACKSLASH                               &kp NUMBER_1      &kp NUMBER_2       &kp NUMBER_3  &kp ASTRK     &kp SLASH
 &kp AMPERSAND     &kp GRAVE          &kp LG(GRAVE)    &kp LG(TAB)            &trans           &kp LG(LC(SPACE))  &trans  &trans            &kp SPACE          &kp COMMA     &kp DOT       &kp INT_YEN
                   &trans             &trans           &trans                 &trans           &trans             &trans  &trans            &trans             &trans        &trans
