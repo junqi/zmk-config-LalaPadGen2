@@ -91,6 +91,27 @@
             bindings = <&none &kp LT &kp I &kp M &kp G &kp SPACE &kp S &kp R &kp C &kp EQUAL &kp DQT &kp DQT &kp SPACE &kp W &kp I &kp D &kp T &kp H &kp EQUAL &kp DQT &kp N6 &kp N0 &kp N0 &kp DQT &kp GT>;
             label = "MD_IMG";
         };
+
+        md_link: md_link {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LBKT &kp RBKT &kp LPAR &kp RPAR &kp LEFT &kp LEFT &kp LEFT>;
+            label = "MD_LINK";
+        };
+
+        md_code: md_code {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp GRAVE &kp GRAVE &kp GRAVE &kp ENTER &kp ENTER &kp GRAVE &kp GRAVE &kp GRAVE &kp UP>;
+            label = "MD_CODE";
+        };
+
+        md_check: md_check {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp MINUS &kp SPACE &kp LBKT &kp SPACE &kp RBKT &kp SPACE>;
+            label = "MD_CHECK";
+        };
     };
 
     keymap {
@@ -128,7 +149,7 @@
 &kp F9      &kp F10            &kp F11          &kp F12           &name                                          &kp PAGE_UP    &kp LG(LBKT)    &kp UP_ARROW    &kp LG(RBKT)    &kp LC(TAB)
 &kp F5      &kp F6             &kp F7           &kp F8            &gmail                                         &kp PAGE_DOWN  &kp LEFT        &kp DOWN_ARROW  &kp RIGHT       &kp LC(LS(TAB))
 &kp F1      &kp F2             &kp F3           &kp F4            &zenq                                          &md_img        &kp LS(LG(N3))  &kp LS(LG(N4))  &kp LS(LG(N5))  &kp LS(LG(LC(N4)))
-&kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PLAY_PAUSE  &kp C_PREVIOUS  &kp C_NEXT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI   &trans          &trans          &trans
+&kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PLAY_PAUSE  &kp C_PREVIOUS  &kp C_NEXT  &md_link           &md_code       &md_check       &trans          &trans          &trans
             &trans             &trans           &trans            &trans          &trans      &trans             &trans         &trans          &trans          &trans
 &trans      &trans             &trans                                                                                                           &trans          &trans          &trans
 &trans      &trans             &trans           &trans            &trans                                         &trans         &trans          &trans          &trans          &trans
